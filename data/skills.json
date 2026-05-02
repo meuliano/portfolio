@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Robotics Systems",
+    "image": "img/skills/microcontroller.jpeg",
+    "imageAlt": "Microcontroller and robotics electronics",
+    "summary": "Hands-on integration across sensors, robot state, simulation, and operator-facing tools.",
+    "items": ["ROS", "DDS", "Localization", "Mapping", "Path Planning", "Systems Integration"]
+  },
+  {
+    "title": "Visualization & XR",
+    "image": "img/skills/coding.jpeg",
+    "imageAlt": "Code on a screen",
+    "summary": "Real-time interfaces for making spatial, simulated, and robotic state easier to understand.",
+    "items": ["Unity", "C#", "AR", "VR", "Digital Twins", "Data Replay"]
+  },
+  {
+    "title": "Simulation",
+    "image": "img/skills/machine_learning.jpeg",
+    "imageAlt": "Machine learning and simulation concept",
+    "summary": "Simulation-first workflows for robotics research, soft-body behavior, and control experiments.",
+    "items": ["MPM", "Gazebo", "Physics Modeling", "CRESSim", "MATLAB", "Numerical Methods"]
+  },
+  {
+    "title": "Computer Vision & AI",
+    "image": "img/skills/electronicdesign.png",
+    "imageAlt": "Electronics and design workspace",
+    "summary": "Perception projects spanning localization, face tracking, and image processing prototypes.",
+    "items": ["OpenCV", "ORB-SLAM3", "Python", "Machine Learning", "Image Processing"]
+  },
+  {
+    "title": "Hardware & Prototyping",
+    "image": "img/skills/manufacturing.jpeg",
+    "imageAlt": "Manufacturing and prototyping tools",
+    "summary": "Mechanical and electrical build experience from vehicle systems to small mechatronic prototypes.",
+    "items": ["CAD", "Arduino", "Raspberry Pi", "Sensor Selection", "3D Printing", "Soldering"]
+  },
+  {
+    "title": "Engineering Practice",
+    "image": "img/skills/cad.png",
+    "imageAlt": "CAD and mechanical design",
+    "summary": "Readable code, practical debugging, and communication across hardware, software, and research teams.",
+    "items": ["Git", "Linux", "Technical Writing", "Testing", "Debug Tooling", "Documentation"]
+  }
+]

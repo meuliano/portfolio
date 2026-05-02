@@ -1,0 +1,38 @@
+{
+  "fields": {
+    "name": "Matthew Euliano",
+    "currentFocus": "Robotics, simulation, AR, and real-time visualization",
+    "headline": "Engineer building real-time visualization, simulation, AR, and AI/CV-integrated tools for robotics and surgical systems.",
+    "summary": "I turn complex robotic systems, sensors, and simulations into usable tools for research, development, and human-facing workflows.",
+    "about": "I am a robotics and visualization engineer with a mechanical engineering foundation, systems integration experience, and a robotics graduate background from Northeastern University.",
+    "aboutDetail": "My strongest work lives at the intersection of physical systems and software: digital twins, simulation, AR overlays, data logging, computer vision, and interfaces that help people understand what a robot or system is doing in real time.",
+    "location": "Boston, Massachusetts",
+    "contactText": "Reach out if you want to compare notes on robotic systems, visualization tooling, simulation, AR, or engineering roles that need someone comfortable crossing hardware and software boundaries."
+  },
+  "links": [
+    {
+      "label": "Resume",
+      "type": "resume",
+      "url": "docs/Euliano_Resume_2022_05.pdf",
+      "external": false
+    },
+    {
+      "label": "GitHub",
+      "type": "github",
+      "url": "https://github.com/meuliano",
+      "external": true
+    },
+    {
+      "label": "Email",
+      "type": "email",
+      "url": "mailto:euliano.m@northeastern.edu",
+      "external": false
+    },
+    {
+      "label": "LinkedIn",
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/in/matt-euliano",
+      "external": true
+    }
+  ]
+}

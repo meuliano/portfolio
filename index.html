@@ -1,806 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
   <head>
-    <title> Matthew Euliano</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!--<title>Agency - Start Bootstrap Theme</title>-->
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- Custom styles for this template -->
-    <link href="css/agency.min.css" rel="stylesheet">
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Matthew Euliano portfolio: robotics, real-time visualization, simulation, AR, and computer vision engineering."
+    />
+    <title>Matthew Euliano | Robotics & Visualization Engineer</title>
+    <link rel="preload" href="img/portfolio/rsn/nuance_car.png" as="image" />
+    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="assets/site.css" />
   </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Matthew Euliano</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#AboutMe">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#TechnicalSkills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Contact</a>
-            </li>
-          </ul>
+    <header class="site-header masthead" id="top">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#top" data-profile="name">Matthew Euliano</a>
+        <div class="nav-links">
+          <a href="#AboutMe">About Me</a>
+          <a href="#projects">Projects</a>
+          <a href="#TechnicalSkills">Skills</a>
+          <a href="#ContactMe">Contact</a>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container">
-        <div class="intro-text">           
-          <div class="intro-heading text-uppercase"style="color:rgba(253, 201, 43, 1); border-radius:5px; line-height: 80px;margin-bottom:100px">Matthew Euliano</div>
-          <div class="intro-lead-in"style="line-height: 40px;margin-bottom: 100px;">M.S. Robotics Student at Northeastern University</div>
-          
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="docs/Euliano_Resume_2022_05.pdf">
-                <i class="fa fa-file-pdf"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://github.com/meuliano">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="mailto:euliano.m@northeastern.edu">
-                <i class="fa fa-envelope"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.linkedin.com/in/matthew-euliano-74658910a/">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <h1 id="hero-title" data-profile="name">Matthew Euliano</h1>
+          <p class="hero-summary" data-profile="currentFocus">Robotics and Visualization Engineer</p>
+          <div class="social-buttons hero-actions" data-link-list="primary"></div>
         </div>
-      </div>
+      </section>
     </header>
 
-    <!-- About -->
-    <section  class="bg-dark" id="AboutMe">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <img class="mx-auto rounded-circle" src="img/spot_square.jpg" alt="" width="500" height="500"> 
+    <main id="main">
+      <section class="section about-section bg-dark" id="AboutMe" aria-labelledby="about-title">
+        <div class="section-inner about-layout">
+          <div class="portrait-frame">
+            <img src="img/unity_pres_2.jpeg" alt="Matthew Euliano outdoors" loading="lazy" />
           </div>
-          <div class="col-md-6"style="color:rgba(255, 255, 255, 1)">
-            <h2 class="section-heading text-uppercase"style="color:rgba(253, 201, 43, 1)">About Me</h2>
-            <p>Born and raised in Gainesville, FL, I earned a bachelor's degree in Mechanical Engineering at Virginia Tech, 
-              and am currently working on my master's in Robotics at Northeastern University in Boston, MA. <br><br>
-              My primary areas of interest in robotics are sensing and navigation, and I have experience using ROS and 
-              Kalman filtering to perform mobile robot localization. I'm also skilled in system integration, and have 
-              specialized as a Systems Integration Engineer at L3Harris for a couple of years. I am working on expanding 
-              my focus areas from pure mechanical and electrical to include more software and theory proficiencies. <br><br>
-              My non-technical hobbies include playing basketball, ukulele, and Virtual Reality games. I'm an avid reader 
-              and listener of audiobooks of topics ranging from science/technology, self-improvement, neuroscience, and 
-              science-fiction. Lastly, I'm passionate about helping people to learn and to enjoy learning and am actively 
-              searching for novel platforms to make education more accessible and enjoyable.<br><br>
+          <div class="about-copy">
+            <h2 id="about-title">About Me</h2>
+            <p data-profile="about">
+              My work sits across real-time visualization, simulation, systems integration, and computer vision.
+            </p>
+            <p data-profile="aboutDetail">
+              I like projects that turn messy physical-world signals into interfaces people can trust and act on.
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
-    </section>
-
-    <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase"style="color:rgba(253, 201, 43, 1)">Projects</h2>
-            <h3 class="section-subheading"style="color:rgba(255, 255, 255, 1)">September 2019 ~ Now</h3>
+      <section class="section projects-section bg-light" id="projects" aria-labelledby="projects-title">
+        <div class="section-inner">
+          <div class="section-heading centered">
+            <h2 id="projects-title">Projects</h2>
+            <p>Current and representative engineering work</p>
           </div>
+          <div class="project-grid" data-project-grid aria-live="polite"></div>
         </div>
-        <div class="row">
+      </section>
 
-          <div class="col-md-6 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#rlCars">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                  
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/rl_cars_demo.gif" alt="">
-            </a>
-            <div class="portfolio-caption"style="background-color: #22333d; color:rgba(253, 201, 43, 1)">
-              <h4>Parallel Parking using Reinforcement Learning</h4>
-              <p class="text-muted"><i>Unity | C# | Python | RL</i> <br><br>
-                Applied deep reinforcement learning algorithms (PPO, SAC, TD3) to the problem of simulated parallel parking using
-                Unity 3D with the ML-Agents toolkit.</p>
-            </div>
+      <section class="section skills-section bg-dark" id="TechnicalSkills" aria-labelledby="skills-title">
+        <div class="section-inner">
+          <div class="section-heading centered">
+            <h2 id="skills-title">Skills</h2>
+            <p>Systems, software, sensing, and hands-on build experience</p>
           </div>
-
-         <div class="col-md-6 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#orbslam">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/rsn/rsn_gif.gif" alt="">
-            </a>
-            <div class="portfolio-caption"style="background-color: #22333d; color:rgba(253, 201, 43, 1)">
-              <h4>VI-SLAM on NUance Car</h4>
-              <p class="text-muted"><i>ROS | CV | Python | MATLAB</i> <br><br>
-                Integrate the ORB-SLAM3 algorithm with ROS for localization and 
-                mapping on the NUance autonomous car.</p>
-            </div>
-          </div>
-
-          
-          <div class="col-md-6 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#nothing">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/vr/vr_gif.gif" alt="">
-            </a>
-            <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
-              <h4>Virtual Reality Game</h4>
-              <p class="text-muted"><i>C++ | Unreal Engine 4 | Blender</i><br><br></p>
-              <p class="text-muted">Developed a Virtual Reality Escape Room using the Oculus Rift CV1</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#comingsoon">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/stretch_nav_gif.gif" alt="">
-            </a>
-            <div class="portfolio-caption"style="background-color: #22333d; color:rgba(253, 201, 43, 1)">
-              <h4>Stretch RE1 Autonomous Navigation</h4>
-              <p class="text-muted"><i>ROS | Python | Path Planning | Mapping</i> <br><br>
-                Using the Hello Robot Stretch RE1 robot to transport 
-                a multimodal sensor suite to perceive human state and wellbeing from a remote location.</p>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#comingsoon">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/SDU_medical.png" alt="">
-            </a>
-            <div class="portfolio-caption"style="background-color: #22333d; color:rgba(253, 201, 43, 1)">
-              <h4>SDU Medical Robotics</h4>
-              <p class="text-muted"><i>Python | DMP | MATLAB | DAQ</i> <br><br>
-                Taught a UR3 arm to perform electrical impedance sensing through demonstration using DMPs.</p>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#pillavate">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                  
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/pillavate/pillavate_gif_base.gif" alt="">
-            </a>
-            <div class="portfolio-caption"style="background-color: #22333d; color:rgba(253, 201, 43, 1)">
-              <h4>Pillavate</h4>
-              <p class="text-muted"><i>Arduino | Product Design | Biometrics</i> <br><br>
-                Elevating pillow based on biometric sensor readings for people suffering from 
-                congestive heart failure and sleep apnea.</p>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#nothing">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/Fraud.png" alt="" >
-            </a>
-            <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
-              <h4>Credit Card Fraud Detection</h4>
-              <p class="text-muted"><i>Python | SVM | Logistic Regression | Machine Learning</i><br><br>
-                Machine Learning project in which credit card fraud detection was performed using Support Vector Machines and Logistic Regression models. 
-                Data preprocessing and resampling was used to compensate for heavy class imbalance.</p>
-            </div>
-          </div>
-
-
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#nothing">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/Baja/Baja_elsd_cad.jpg" alt="" >
-            </a>
-            <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
-              <h4>Electronic Limited-Slip Differential</h4>
-              <p class="text-muted"><i>C++ | Arduino | CAD | Sensor Fusion</i><br><br>
-                Baja SAE Skunkworks team designed and tested an electronically controlled limited-slip differential for the off-road Baja vehicle. I designed the control system, performed sensor selection and integration, and led vehicle simulation</p>
-            </div>
+          <div class="skills-grid" data-skills-grid></div>
         </div>
+      </section>
 
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" href="#nothing">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                      <i class="fas fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img class="img-fluid" src="img/portfolio/eyes/eyes_gif.gif" alt="">
-                </a>
-                <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
-                  <h4>Computer Vision Eye Tracking</h4>
-                  <p class="text-muted"><i>CV | RaspberryPi | Arduino | Python</i><br><br>
-                    Extended the Servo Smoothing experimental robot designed by James Bruton by integrating webcam and RaspberryPi with OpenCV for face tracking to control the eyes to follow movement</p>
-                </div>
-              </div>
-
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#nothing">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/gumgun/gumgun3.jpg" alt="">
-            </a>
-            <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
-              <h4>Gum Stick Launcher</h4>
-              <p class="text-muted"><i>Arduino | C++ | CAD | Mech Design</i><br><br>
-                Designed, built, tested, and iterated something that nobody on the internet would have done - an overpowered launcher for sticks of gum</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#panorama">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/photomosaic.png" alt="">
-            </a>
-            <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
-              <h4>ImageMosaic</h4>
-              <p class="text-muted"><i>Computer Vision</i><br><br>
-                Create an image panorama by stitching a set
-                of images together</p>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#nothing">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/quotes1.jpg" alt="">
-            </a>
-            <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
-              <h4>Quote Display </h4>
-              <p class="text-muted"><i>RaspberryPi | Google APIs</i><br><br>
-                Used an Electronic Ink screen to display quotes and messages pulled from a Google Doc</p>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#dynamics">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/disassembly/disassembly_parts.jpg" alt="" width="400" height="150">
-            </a>
-            <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
-              <h4>Reverse Engineering / Breaking Things </h4>
-              <p class="text-muted"><i>Hand Tools | Soldering</i><br><br>
-                "When you want to know how things really work, study them when they're coming apart." -William Gibson</p>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#comingsoon">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fas fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/finger/finger_protector.jpg" alt="" width="400" height="300">
-            </a>
-            <div class="portfolio-caption"style="background-color:#22333d; color:rgba(253, 201, 43, 1)">
-              <h4>Fingertip Protector</h4>
-              <p class="text-muted"><i>CAD | Unfortunate Physical Injury</i> <br><br>
-                Designed an improved fingertip brace and protector after it was removed during an incident with fruit salad and a sharp knife</p>
-            </div>
-          </div>
-
-          
-          
-        </div>
-      </div>
-    </section>
-
-    <!-- Technical Skills -->
-    <section  class="bg-dark" id="TechnicalSkills">
-        <div class="container"style="color:rgba(253, 201, 43, 1)">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <h2 class="section-heading text-uppercase">Skills</h2>
-              <p></p>
-            </div>
-          </div>
-          <div class="row text-center">
-            <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                  <img class="mx-auto rounded-circle" src="img/skills/microcontroller.jpeg" alt="" width="120" height="120">  
-                </span>
-                <h4 class="service-heading">Robotics</h4>
-                <p class="text-muted"> ROS,Linux,Git,Gazebo <br> Computer Vision, Machine Learning<br> Motion Planning,Feedback Control,Cloud Computing</p>
-            </div>
-            <div class="col-md-4">
-                <span class="fa-stack fa-4x">
-                  <img class="mx-auto rounded-circle" src="img/skills/coding.jpeg" alt="" width="120" height="120">  
-                </span>
-                <h4 class="service-heading">Programming</h4>
-                <p class="text-muted">C++, C，Python, Java, MATLAB</p>
-            </div>
-            <div class="col-md-4">
-              <span class="fa-stack fa-4x">
-                <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> -->
-                <img class="mx-auto rounded-circle" src="img/skills/electronicdesign.png" alt="" width="120" height="120">
-              </span>
-              <h4 class="service-heading">Electrical Engineering</h4>
-              <p class="text-muted">Power System, Microprocessor<br>PCB Design, Electronic System Design</p>
-            </div>
-            <div class="col-md-4">
-              <span class="fa-stack fa-4x">
-                <img class="mx-auto rounded-circle" src="img/skills/manufacturing.jpeg" alt="" width="120" height="120">  
-              </span>
-              <h4 class="service-heading">Manufacturing</h4>
-              <p class="text-muted"> Laser Cutter, 3D printing, soldering </p>
-            </div>
-            <div class="col-md-4">
-              <span class="fa-stack fa-4x">
-                <img class="mx-auto rounded-circle" src="img/skills/cad.png" alt="" width="120" height="120">  
-              </span>
-              <h4 class="service-heading">Mechanical Engineering</h4>
-              <p class="text-muted">Creo, Nx, Fusion360, SolidWorks<br> Mechatronics/ Microcontroller</p>
-            </div>
-            <div class="col-md-4">
-              <span class="fa-stack fa-4x">
-                <img class="mx-auto rounded-circle" src="img/skills/machine_learning.jpeg" alt="" width="120" height="120">  
-              </span>
-              <h4 class="service-heading">Research Interest</h4>
-              <p class="text-muted">Assistive Robotics, AR/VR<br>Sensing and Navigation</p>
-            </div>
+      <section class="section contact-section bg-light" id="ContactMe" aria-labelledby="contact-title">
+        <div class="section-inner contact-layout">
+          <img class="contact-photo" src="img/square_pic.jpg" alt="Matthew Euliano" loading="lazy" />
+          <div class="team-member">
+            <h2 id="contact-title">Contact Me</h2>
+            <h3 data-profile="name">Matthew Euliano</h3>
+            <p data-profile="summary">Robotics and Visualization Engineer</p>
+            <p data-profile="contactText">
+              I am always happy to compare notes on technical projects, collaboration, and engineering opportunities.
+            </p>
+            <div class="social-buttons contact-links" data-link-list="contact"></div>
           </div>
         </div>
       </section>
-    
-    <!-- contact -->
-    <section class="bg-light" id="team">
-      <div class="container"style="color:rgba(255, 255, 255, 1)">
-        <div class="row">
-            <div class="col-lg-12 max-auto mb-5">
-                <img class="mx-auto d-block rounded-circle" src="img/square_pic.jpg" alt="Avatar" width="300" height="300">
-            </div>
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase"style="color:rgba(253, 201, 43, 1)">Contact me</h2>
-           
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-         
+    </main>
 
-            <div class="team-member">
-              
-              <h4>Matthew Euliano</h4>
-              <p class="text-muted">Master of Science in Robotics @ Northeastern University</p>
+    <footer class="site-footer">
+      <p>&copy; <span data-current-year></span> <span data-profile="name">Matthew Euliano</span></p>
+      <a href="#top">Back to top</a>
+    </footer>
 
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="docs/Euliano_Resume_2022_05.pdf">
-                    <i class="fa fa-file-pdf"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://github.com/meuliano">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="mailto:euliano.m@northeastern.edu">
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/musheng-he-a50277176/">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-           
-          </div>
-        </div>
-      </div>
-    </section>
+    <dialog class="project-dialog" data-project-dialog aria-label="Project details">
+      <button class="dialog-close" type="button" data-project-dialog-close aria-label="Close project details">
+        Close
+      </button>
+      <div class="project-dialog-content" data-project-dialog-content></div>
+    </dialog>
 
-
-    <!-- Portfolio Modals -->
-    <!-- RL Cars -->
-    <div class="portfolio-modal modal fade" id="rlCars" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body" style="color:rgb(255, 255, 255)">
-                  <!-- Project Details Go Here -->
-                  <h1 class="text-uppercase">More Info</h1>                   
-                  <p>Applied deep reinforcement learning algorithms (PPO, SAC, TD3) to the problem of simulated parallel parking using
-                    Unity 3D with the ML-Agents toolkit.</p>
-
-                  <ul class="list-inline social-buttons">
-                    <li class="list-inline-item">
-                      <h4>Technical Report</h4></li>  
-                    <li class="list-inline-item">
-                      <a href="docs/RL_Cars/report.pdf">
-                        <i class="fa fa-file-pdf"></i></a></li></ul>
-
-                  <ul class="list-inline social-buttons">
-                    <li class="list-inline-item">
-                      <h4>Presentation</h4></li>  
-                    <li class="list-inline-item">
-                      <a href="docs/RL_Cars/presentation.ppt">
-                        <i class="fa fa-file-powerpoint"></i></a></li></ul>
-
-                  <ul class="list-inline social-buttons">
-                    <li class="list-inline-item">
-                      <h4>Code Repository</h4></li>  
-                    <li class="list-inline-item">
-                      <a href="https://github.com/meuliano/RL_Parking">
-                        <i class="fab fa-github"></i></a></li></ul>
-
-                  <ul class="list-inline social-buttons">
-                    <li class="list-inline-item">
-                      <h4>Video Demo</h4></li>  
-                    <li class="list-inline-item">
-                      <a href="https://www.youtube.com/watch?v=QDVwSAgY6cA">
-                        <i class="fab fa-youtube"></i></a></li></ul>
-                </div></div></div></div></div></div></div>
-
-    <!-- ORB-SLAM3 -->
-    <div class="portfolio-modal modal fade" id="orbslam" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                <div class="rl"></div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8 mx-auto">
-                  <div class="modal-body" style="color:rgb(255, 255, 255)">
-                    <!-- Project Details Go Here -->
-                    <h1 class="text-uppercase">More Info</h1>                   
-                    <p>This project aims to integrate the ORB-SLAM3 algorithm with ROS for localization and mapping on the NUance autonomous car.</p>
-                    <ul class="list-inline social-buttons">
-                      <li class="list-inline-item">
-                        <h4>Final Presentation</h4>
-                      </li>  
-                      <li class="list-inline-item">
-                        <a href="docs/EECE5554Group8FinalPresentation.pdf">
-                          <i class="fa fa-file-powerpoint"></i></a></li></ul>
-                    <ul class="list-inline social-buttons">
-                      <li class="list-inline-item">
-                        <h4>Github Repository</h4></li>  
-                      <li class="list-inline-item">
-                        <a href="https://github.com/meuliano/rsn_orbslam3">
-                          <i class="fab fa-github"></i></a></li></ul>
-                  </div></div></div></div></div></div></div>
-
-    <!-- Pillavate -->
-    <div class="portfolio-modal modal fade" id="pillavate" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body" style="color:rgb(255, 255, 255)">
-                  <!-- Project Details Go Here -->
-                  <h1 class="text-uppercase">More Info</h1>                   
-                  <p>Elevating pillow based on biometric sensor readings for people suffering from 
-                    congestive heart failure and sleep apnea.</p>
-
-                  <ul class="list-inline social-buttons">
-                    <li class="list-inline-item">
-                      <h4>Technical Report</h4></li>  
-                    <li class="list-inline-item">
-                      <a href="docs/pillavate_report.pdf">
-                        <i class="fa fa-file-pdf"></i></a></li></ul>
-                </div></div></div></div></div></div></div>
-
-          
-    <!-- Healer Baxter -->
-    <div class="portfolio-modal modal fade" id="healerbaxter" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                <div class="rl"></div>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8 mx-auto">
-                  <div class="modal-body">
-                    <!-- Project Details Go Here -->
-                    <h3 class="text-uppercase">Healer Baxter</h3>
-                    <a class="boxed">Deep Learning</a>&ensp;<a class="boxed">Tensorflow</a>&ensp;<a class="boxed">Python</a>&ensp;<a class="boxed">Computer Vision</a>&ensp;<a class="boxed">Motion Planning</a>
-                    <p></p>
-                    <h4>Brief Description</h4>       
-                    <p>This project aims to use deep learning and manipulation platform to train a two-armed robot to play the piano based on the human emotion.</p>
-                    <p></p>
-                    <h4>Motivation</h4>       
-                    <p>We live in an era in which communication seems simpler than any times, a friend is only one text away or one video chat away. Although communication may be easier and faster, people still feel lonely and depression rates have largely increased. Inspired by this circumstance, this project is to design a system that would enable the Baxter Robot to detect the negative emotion of its master and play songs on the piano using both hands to help him/her get rid of the bad feelings.</p>
-                    <p></p>
-                    <h4>Emotion Detection</h4>
-                    <h5>1. Data Description</h5> 
-                    <p>The data consists of 48x48 pixel grayscale images of faces. The faces have been automatically registered so that the face is more or less centered and occupies about the same amount of space in each image. The datasets are composed of 28,709 training examples
-                        and 3,589 testing examples. The training samples are then divided into two sets namely; Training Set and Validation Set. Training set samples composed of 80% of the original dataset samples and 20% of the samples are specified for validation. </p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/healer_baxter/data.png" alt="">
-                    <p></p>
-                    <h5>2. Data Augmentationg</h5> 
-                    <p>In order to avoid overfitting and improve
-                      recognition accuracy, the following transforms are perfomed on each image:
-                      a. Rescale (1. / 255)
-                      B. Rotation (30)
-                      b. Shear (0.3)
-                      c. Zoom (0.3)
-                      d. shift(width:0.4,height:0.4)
-                      e. Flip (horizontal)</p>
-                    <p></p>
-                    <h5>3. Proposed CNN Model</h5>       
-                    <p>The CNN Model I built takes a 48*48 pixels grayscale image as input. This model is composed of 5 convolutional layers, each followed with a max pooling layer, and 2 fully connected layers. I
-                        classified images through softmax activation function at the last layer (output layer). The
-                      output layer consists of 5 neurons corresponding to 5
-                      emotional labels: Angry, Happy, Neutral, Sad and Surprise. </p>
-                    <p></p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/healer_baxter/CNN_ARC.png" alt="">
-                    <p></p>
-                    <h5>Emotion Detection Demo</h5> 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/s_xAZkpSfBo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h4>Piano Playing</h4>
-                    <p>The detected emotion would be written in a text file using basic pyhton I/O function. The piano playing node keep reading this text file and when the emotion "sad" is detected and written in the file, baxter would start playing the piano</p>
-                    <h5>Locate keys using AprilTags</h5> 
-                    <p>Use pose infomation of the two apriltags in left_arm frame to compute the poses of keys in the baxter base frame</p>
-                    <img class="img-fluid d-block mx-auto" src="img/portfolio/healer_baxter/piano.png" alt="">
-                    <h5>Piano Playing Demo</h5> 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lJ78-UlrxD4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <ul class="list-inline">
-                    <p><a class="boxed" href="https://github.com/mushenghe/HealerBaxter"><font color="red"><b>Github Page</b> </font></a></p>
-                    </ul>
-                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                      <i class="fas fa-times"></i>
-                      Close Project</button>
-                      
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-    <!-- Terminator -->
-    <div class="portfolio-modal modal fade" id="terminator" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h3 class="text-uppercase">Terminator</h3>
-                  <a class="boxed">ROS</a>&ensp;<a class="boxed">Baxter</a>&ensp;<a class="boxed">Python</a>&ensp;<a class="boxed">Computer Vision</a>&ensp;<a class="boxed">Motion Planning</a>
-                  <p></p>         
-                  <h4>Brief Description</h4>       
-                  <p>The goal of this project is to enable Baxter Robot pick up a nerf gun, locate a cup, pull the nerf gun trigger to shoot the cup when given a user input, and move to a final pose. </p>
-                  <h4>Action Sequence</h4> 
-                  <p></p>
-                  <p>1. Baxter goes through initial calibration and start up sequence. Arms are moved to an initial pose. <br>
-                  2. Baxter finds the nerf gun using an AprilTag and its left arm camera<br>
-                  3. Baxter moves its left arm to line up with the nerf gun and closes its gripper to pick up the gun<br>
-                  4. Once Baxter has the gun, it uses its left arm camera to find a cup using darknet<br>
-                  5. Baxter keeps moving its left arm until the cup is in the center of the image produced by the camera<br>
-                  6. Baxter moves its right arm to put its grippers around the nerf gun trigger<br>
-                  7. Baxter waits for a user input to confirm the firing of the gun<br>
-                  8. Baxter keeps waiting until the user tells it to fire<br>
-                  9. Baxter pulls the trigger using its right gripper<br>
-                  10. Baxter moves to a final pose right after shooting<br></p>
-                  <p></p>
-                  <h4>Demo</h4>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/2MRsNefNWmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <p></p>
-
-                  <ul class="list-inline">
-                  <p><a class="boxed" href="https://github.com/mushenghe/final-project-terminator"><font color="red"><b>Github Page</font></a></p> </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fas fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- KUKA Manipulation -->
-    <div class="portfolio-modal modal fade" id="kuka" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h3 class="text-uppercase">Mobile Manipulation</h3>
-                  <a class="boxed">Manipulation</a>&ensp;<a class="boxed">Motion Planning</a>&ensp;<a class="boxed">VREP</a>
-                  <p></p>
-                  <h4>Brief Description</h4>
-                  <p>The goal of this project is to drive the KUKA youBot to pick up a block at the start location, carry it to the desired location, and put it down in the simulation software V-REP. The project covers the following topics: <br>1. Plan a trajectory for the end-effector of the youBot mobile manipulator. <br>2. Generate the kinematics model of the youBot, consisting of the mobile base with 4 mecanum wheels and the robot arm with 5 joints<br>3. Apply feedback control to drive the robot to implement the desired task<br>4. Conduct the simulations in V-REP</p>                           
-                  <h5>First Task Demo</h5>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/C3QQO7TZn4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <h5>Second Task Demo</h5>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/1WKscbUi3HA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  <p><a class="boxed" href="https://github.com/mushenghe/Mobile-Manipulation-"><font color="red"><b>Github Page</font></a></p>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fas fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   
-    <!-- Coming Soon! -->
-    <div class="portfolio-modal modal fade" id="comingsoon" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-              <div class="rl"></div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-              <div class="col-lg-8 mx-auto">
-                  <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h3 class="text-uppercase">Sorry, this page is not ready yet!</h3>
-                  <p>- Report - - Github - - Mail - - LinkedIn -</p>
-                  <ul class="list-inline social-buttons">
-                    <li class="list-inline-item">
-                      <a href="docs/Euliano_Resume_2022_05.pdf">
-                        <i class="fa fa-file-pdf"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://github.com/meuliano">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="mailto:euliano.m@northeastern.edu">
-                        <i class="fa fa-envelope"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.linkedin.com/in/musheng-he-a50277176/">
-                        <i class="fab fa-linkedin-in"></i>
-                      </a>
-                    </li>
-                  </ul>
-                  </div>
-              </div>
-              </div>
-          </div>
-          </div>
-      </div>
-      </div>
-
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
-
+    <script src="assets/site.js" type="module"></script>
   </body>
-
 </html>
