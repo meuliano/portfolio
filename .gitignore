@@ -1,2 +1,3 @@
-docs/Masters_Proj/*.pptx
-img/Masters_Proj/*.mp4
+# Local source decks: too large for GitHub and not intended for public publishing.
+projects/cressim-unity/source-presentation.pptx
+projects/unity-industry-summit/source-presentation.pptx

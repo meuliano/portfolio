@@ -9,9 +9,11 @@ The old site was a single large Bootstrap template, which made routine updates r
 - `index.html` contains the page structure.
 - `assets/site.css` contains all styling.
 - `assets/site.js` loads the data and renders repeated UI.
-- `data/profile.json` contains headline, bio, contact text, and links.
-- `data/projects.json` contains project cards, filters, images, tags, and links.
-- `data/skills.json` contains skill groups.
+- `data/profile.js` contains headline, bio, contact text, and links.
+- `data/projects.js` contains project cards, images, tags, and links.
+- `data/skills.js` contains skill groups.
+- `projects/<project-name>/` keeps every project asset together with no nested folders.
+- `img/site/` contains shared page imagery; `img/skills/` contains skill-card imagery.
 
 GitHub Pages can serve this directly. No build step is required.
 
@@ -19,14 +21,14 @@ GitHub Pages can serve this directly. No build step is required.
 
 ### Profile
 
-Edit `data/profile.json` for:
+Edit `data/profile.js` for:
 
 - headline and summary
 - about text
 - email, GitHub, LinkedIn, and resume links
 - location and contact text
 
-To add a resume button, put the PDF somewhere like `docs/resume.pdf`, then add this object to the `links` array:
+The current resume lives at `docs/resume.pdf`. To replace it, keep the same filename or update its object in `data/profile.js`.
 
 ```json
 {
@@ -48,7 +50,7 @@ To add an email button, add this object to the `links` array:
 
 ### Projects
 
-Edit `data/projects.json`. Each project is a self-contained object with summary text, tags, media, highlights, and useful links. The page builds the card and detail modal automatically.
+Edit `data/projects.js`. Each project is a self-contained object with summary text, tags, media, highlights, and useful links. The page builds the card and detail modal automatically.
 
 ```json
 {
@@ -62,14 +64,14 @@ Edit `data/projects.json`. Each project is a self-contained object with summary 
   "media": [
     {
       "type": "image",
-      "src": "img/example.jpg",
+      "src": "projects/example-project/preview.jpg",
       "alt": "Useful description of the image",
       "caption": "Short caption shown in the project details modal."
     },
     {
       "type": "video",
-      "src": "img/projects/demo.mp4",
-      "poster": "img/projects/demo-poster.jpg",
+      "src": "projects/example-project/demo.mp4",
+      "poster": "projects/example-project/demo-poster.jpg",
       "alt": "Demo video",
       "caption": "Local video clip."
     },
@@ -97,7 +99,7 @@ Edit `data/projects.json`. Each project is a self-contained object with summary 
 
 The first item in `media` becomes the project card preview. The rest appear in the project details modal. Resource `type` controls the icon; common values are `github`, `report`, `paper`, `presentation`, `source`, `demo`, `video`, `resume`, and `document`.
 
-Use categories to keep the data organized. The current page shows projects in the order they appear in `data/projects.json`, so put the strongest/recent work first.
+Use categories to keep the data organized. The current page shows projects in the order they appear in `data/projects.js`, so put the strongest/recent work first.
 
 - `Robotics`
 - `Visualization / XR`
@@ -106,13 +108,19 @@ Use categories to keep the data organized. The current page shows projects in th
 - `Hardware`
 - `Personal Project`
 
-### Images
+### Project assets
 
-Keep images and videos in `img/` or a subfolder of `img/`. For portfolio cards, prefer compressed JPG/WebP/PNG assets under roughly 500 KB when possible. Several legacy GIFs and videos are still large; replacing them with smaller poster images will make the page noticeably faster.
+Give each project one folder at `projects/<project-name>/` and keep its images, videos, reports, and presentations directly inside that folder. Do not add another level of subfolders. See `projects/README.md` for the current folder index.
+
+For portfolio cards, prefer compressed JPG/WebP/PNG assets under roughly 500 KB when possible. Several legacy GIFs and videos are still large; replacing them with smaller poster images will make the page noticeably faster.
+
+The local CRESSim and Unity Industry Summit source decks are intentionally ignored: both exceed GitHub's normal single-file limit, and the portfolio uses redacted/public media instead.
 
 ## Local preview
 
-Because the page loads JSON files with `fetch()`, preview it through a small local server instead of opening `index.html` directly:
+You can open `index.html` directly from File Explorer. The data files use regular browser scripts, so projects and profile content also load from a `file://` URL.
+
+To preview through a local server instead:
 
 ```powershell
 python -m http.server 8080
@@ -123,8 +131,6 @@ Then open:
 ```text
 http://localhost:8080
 ```
-
-Opening `index.html` from File Explorer uses a `file://` URL. Most browsers restrict JavaScript from loading nearby JSON files from `file://`, so the page shell may appear without the project/profile data. The local server gives the same files an HTTP origin, which is how GitHub Pages will serve them.
 
 ## GitHub Pages deployment
 

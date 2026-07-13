@@ -1,9 +1,3 @@
-const DATA_PATHS = {
-  profile: "data/profile.json",
-  projects: "data/projects.json",
-  skills: "data/skills.json",
-};
-
 const state = {
   projects: [],
 };
@@ -67,17 +61,6 @@ const SVG_ICONS = {
   ],
 };
 
-// Fetching content from JSON keeps portfolio updates out of the HTML layout.
-async function loadJson(path) {
-  const response = await fetch(path);
-
-  if (!response.ok) {
-    throw new Error(`Unable to load ${path}`);
-  }
-
-  return response.json();
-}
-
 function text(selector, value) {
   document.querySelectorAll(selector).forEach((element) => {
     element.textContent = value || "";
@@ -131,6 +114,10 @@ function firstMedia(project) {
 function createMediaElement(media, compact = false) {
   const frame = document.createElement("figure");
   frame.className = "media-frame";
+
+  if (media?.focus === "top") {
+    frame.classList.add("media-focus-top");
+  }
 
   if (!media) {
     const placeholder = document.createElement("div");
@@ -204,7 +191,7 @@ function renderProjects() {
 
   grid.innerHTML = "";
 
-  // Cards are built from data only; add or reorder projects in data/projects.json.
+  // Cards are built from data only; add or reorder projects in data/projects.js.
   state.projects.forEach((project) => {
     const card = document.createElement("article");
     card.className = "project-card";
@@ -370,13 +357,15 @@ function renderSkills(skills) {
   });
 }
 
-async function init() {
+function init() {
   try {
-    const [profile, projects, skills] = await Promise.all([
-      loadJson(DATA_PATHS.profile),
-      loadJson(DATA_PATHS.projects),
-      loadJson(DATA_PATHS.skills),
-    ]);
+    const profile = window.PORTFOLIO_PROFILE;
+    const projects = window.PORTFOLIO_PROJECTS;
+    const skills = window.PORTFOLIO_SKILLS;
+
+    if (!profile || !projects || !skills) {
+      throw new Error("Portfolio data did not load.");
+    }
 
     state.projects = projects;
     renderProfile(profile);
@@ -386,7 +375,7 @@ async function init() {
   } catch (error) {
     const grid = document.querySelector("[data-project-grid]");
     if (grid) {
-      grid.textContent = "Portfolio content could not be loaded. Start a local static server or check the data files.";
+      grid.textContent = "Portfolio content could not be loaded. Check the data files.";
     }
     console.error(error);
   }
