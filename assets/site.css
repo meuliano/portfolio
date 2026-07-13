@@ -78,7 +78,7 @@ code {
   min-height: 100svh;
   background:
     linear-gradient(rgba(20, 26, 32, 0.46), rgba(20, 26, 32, 0.56)),
-    url("../img/header-bg.jpg") center center / cover no-repeat;
+    url("../img/site/hero.jpg") center center / cover no-repeat;
   color: var(--white);
   text-align: center;
 }
@@ -329,7 +329,7 @@ code {
 .projects-section {
   background:
     linear-gradient(rgba(33, 37, 41, 0.84), rgba(33, 37, 41, 0.9)),
-    url("../img/header-bg_smol.jpg") center / cover fixed;
+    url("../img/site/projects-background.jpg") center / cover fixed;
 }
 
 .project-grid {
@@ -519,6 +519,10 @@ code {
   aspect-ratio: 16 / 9;
   border: 0;
   object-fit: cover;
+}
+
+.project-media-gallery .media-focus-top img {
+  object-position: center top;
 }
 
 .project-media-gallery figcaption {
