@@ -13,7 +13,7 @@ window.PORTFOLIO_PROFILE = {
     {
       "label": "Resume",
       "type": "resume",
-      "url": "docs/resume.pdf",
+      "url": "docs/Euliano_Resume_2026_07.pdf",
       "external": false
     },
     {
@@ -25,7 +25,7 @@ window.PORTFOLIO_PROFILE = {
     {
       "label": "Email",
       "type": "email",
-      "url": "mailto:euliano.m@northeastern.edu",
+      "url": "mailto:meuliano@gmail.com",
       "external": false
     },
     {

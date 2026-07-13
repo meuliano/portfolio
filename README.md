@@ -28,12 +28,12 @@ Edit `data/profile.js` for:
 - email, GitHub, LinkedIn, and resume links
 - location and contact text
 
-The current resume lives at `docs/resume.pdf`. To replace it, keep the same filename or update its object in `data/profile.js`.
+The current resume lives at `docs/Euliano_Resume_2026_07.pdf`. To replace it, keep the same filename or update its object in `data/profile.js`.
 
 ```json
 {
   "label": "Resume",
-  "url": "docs/resume.pdf",
+  "url": "docs/Euliano_Resume_2026_07.pdf",
   "external": false
 }
 ```
