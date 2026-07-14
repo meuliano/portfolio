@@ -64,6 +64,13 @@ window.PORTFOLIO_PROJECTS = [
     "media": [
       {
         "type": "image",
+        "src": "projects/unity-industry-summit/presenting.jpg",
+        "focus": "center",
+        "alt": "Matthew Euliano presenting at Unity Industry Summit America 2025",
+        "caption": "Presenting at Unity Industry Summit America 2025."
+      },
+      {
+        "type": "image",
         "src": "projects/unity-industry-summit/speaker.jpeg",
         "focus": "top",
         "alt": "Matthew Euliano speaking at Unity Industry Summit America 2025",
