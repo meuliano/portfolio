@@ -19,9 +19,9 @@ window.PORTFOLIO_PROJECTS = [
     "media": [
       {
         "type": "image",
-        "src": "projects/cressim-unity/demo_gif.gif",
-        "alt": "Real-time deformable material simulation rendered in Unity",
-        "caption": "Redacted real-time demo of deformable material interaction and GPU surface rendering."
+        "src": "projects/cressim-unity/demo_gif_new.gif",
+        "alt": "Real-time cutting and deformation simulation rendered in Unity",
+        "caption": "Redacted real-time demo of cutting, deformable-material interaction, and GPU surface rendering."
       },
       {
         "type": "video",

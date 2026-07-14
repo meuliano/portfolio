@@ -1,13 +1,14 @@
 window.PORTFOLIO_PROFILE = {
   "fields": {
     "name": "Matthew Euliano",
-    "currentFocus": "Robotics, simulation, AR, and real-time visualization",
-    "headline": "Engineer building real-time visualization, simulation, AR, and AI/CV-integrated tools for robotics and surgical systems.",
-    "summary": "I turn complex robotic systems, sensors, and simulations into usable tools for research, development, and human-facing workflows.",
-    "about": "I am a robotics and visualization engineer with a mechanical engineering foundation, systems integration experience, and a robotics graduate background from Northeastern University.",
-    "aboutDetail": "My strongest work lives at the intersection of physical systems and software: digital twins, simulation, AR overlays, data logging, computer vision, and interfaces that help people understand what a robot or system is doing in real time.",
-    "location": "Boston, Massachusetts",
-    "contactText": "Reach out if you want to compare notes on robotic systems, visualization tooling, simulation, AR, or engineering roles that need someone comfortable crossing hardware and software boundaries."
+    "currentFocus": "Robotics, simulation, digital twins, and real-time visualization",
+    "headline": "Robotics and visualization engineer building real-time simulation, digital-twin, AR, and computer-vision tools.",
+    "summary": "I turn complex robotic systems, simulations, and sensor data into tools people can understand and use.",
+    "about": "I’m a robotics and visualization engineer based in Gainesville, with a mechanical engineering foundation, a graduate background in robotics, and a habit of moving comfortably between hardware and software.",
+    "aboutDetail": "Recently, I’ve been building real-time soft-tissue simulation tools in Unity, developing digital-twin workflows for logging and replay, and presenting those ideas to industry audiences. I do my best work where simulation, robotics, computer vision, and clear interfaces meet.",
+    "aboutAdventure": "I also make room for adventure. My wife and I spent four months on our honeymoon traveling through Australia, Sri Lanka, and Indonesia; now I’m looking for the next exciting chapter—this time in my career—with a team tackling ambitious, meaningful problems.",
+    "location": "Gainesville",
+    "contactText": "Now based in Gainesville, I’m looking for a team where I can bring this cross-disciplinary experience to ambitious robotics, simulation, or visualization work. If that sounds useful, I’d love to talk."
   },
   "links": [
     {
