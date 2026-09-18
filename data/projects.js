@@ -1,5 +1,35 @@
 window.PORTFOLIO_PROJECTS = [
   {
+    "title": "Honeymoon Explorer",
+    "date": "2026",
+    "summary": "Created an interactive travel atlas in ChatGPT Work that turns our honeymoon into an explorable story, with a rotating globe, illustrated regional maps, and photo and video memories.",
+    "categories": ["Visualization / XR", "Personal Project"],
+    "tags": ["React", "Canvas", "Interactive Maps", "Cloudflare", "ChatGPT Work"],
+    "media": [
+      {
+        "type": "image",
+        "src": "projects/honeymoon-explorer/demo.gif",
+        "fit": "contain",
+        "wide": true,
+        "alt": "Honeymoon Explorer's interactive globe showing destinations and travel routes for Matt and Maggie's honeymoon",
+        "caption": "Explore our honeymoon through a rotating globe, regional maps, and shared memories."
+      }
+    ],
+    "highlights": [
+      "Connected an interactive globe and illustrated regional maps to an ordered story of destinations, events, photos, and videos.",
+      "Added journey playback with travel segments between memories, alongside direct links to individual events.",
+      "Built an owner studio for organizing places, editing the story, and reviewing media before publishing updates to the public atlas."
+    ],
+    "resources": [
+      {
+        "label": "Explore the Live Site",
+        "type": "external",
+        "url": "https://honeymoon-memory-atlas.meuliano.chatgpt.site/",
+        "external": true
+      }
+    ]
+  },
+  {
     "title": "IHMC Lecture: Prototyping Useful Technology in Surgical Robotics",
     "date": "August 5, 2026",
     "summary": "Presented at IHMC’s Afternoon Lecture Series in Pensacola on lessons from collaborative R&D at Medtronic: testing critical assumptions, evaluating prototypes with surgeons, and turning reusable technology into tools for surgical robotics.",
