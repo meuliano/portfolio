@@ -115,6 +115,13 @@ function createMediaElement(media, compact = false) {
   const frame = document.createElement("figure");
   frame.className = "media-frame";
 
+  if (media?.fit === "contain") {
+    frame.classList.add("media-fit-contain");
+  }
+  if (!compact && media?.wide) {
+    frame.classList.add("media-wide");
+  }
+
   if (media?.focus === "top") {
     frame.classList.add("media-focus-top");
   }

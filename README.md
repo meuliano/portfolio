@@ -99,6 +99,8 @@ Edit `data/projects.js`. Each project is a self-contained object with summary te
 
 The first item in `media` becomes the project card preview. The rest appear in the project details modal. Resource `type` controls the icon; common values are `github`, `report`, `paper`, `presentation`, `source`, `demo`, `video`, `resume`, and `document`.
 
+Set `fit: "contain"` on an image to show the complete frame without cropping (useful for lecture slides). Set `wide: true` on a media item to span both columns in the detail gallery.
+
 Use categories to keep the data organized. The current page shows projects in the order they appear in `data/projects.js`, so put the strongest/recent work first.
 
 - `Robotics`

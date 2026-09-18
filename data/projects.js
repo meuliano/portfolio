@@ -1,5 +1,50 @@
 window.PORTFOLIO_PROJECTS = [
   {
+    "title": "IHMC Lecture: Prototyping Useful Technology in Surgical Robotics",
+    "date": "August 5, 2026",
+    "summary": "Presented at IHMC’s Afternoon Lecture Series in Pensacola on lessons from collaborative R&D at Medtronic: testing critical assumptions, evaluating prototypes with surgeons, and turning reusable technology into tools for surgical robotics.",
+    "categories": ["Robotics", "Visualization / XR", "Medical Robotics"],
+    "tags": ["Rapid Prototyping", "Digital Twins", "Surgical AR", "Technical Communication"],
+    "media": [
+      {
+        "type": "image",
+        "src": "projects/ihmc-lecture/title-and-speaker.jpg",
+        "fit": "contain",
+        "alt": "Matthew Euliano at the IHMC lectern beside the title slide, Prototyping Useful Technology in Surgical Robotics",
+        "caption": "Presenting at IHMC’s Afternoon Lecture Series in Pensacola on August 5, 2026."
+      },
+      {
+        "type": "image",
+        "src": "projects/ihmc-lecture/digital-twin-playback.jpg",
+        "fit": "contain",
+        "alt": "Matthew Euliano demonstrating a Hugo surgical robot digital twin with synchronized endoscope video and a playback timeline",
+        "caption": "A recorded preclinical lab procedure replayed in the digital twin, with synchronized robot motion and endoscope video."
+      },
+      {
+        "type": "youtube",
+        "src": "https://www.youtube.com/embed/BUsZT30O7Dc",
+        "wide": true,
+        "alt": "IHMC afternoon lecture by Matthew Euliano: Prototyping Useful Technology in Surgical Robotics",
+        "caption": "Full lecture recording from IHMC (56:54)."
+      }
+    ],
+    "highlights": [
+      "Shared my approach to turning early research concepts into integrated prototypes that surgeons, clinicians, and engineers can experience and evaluate. The examples draw on work developed collaboratively with my Medtronic colleagues.",
+      "Used a subsurface surgical AR concept to explain how to test the assumption most likely to invalidate an idea. Displaying a preoperative anatomy model was feasible, but keeping it accurately registered to moving, deforming tissue remained the central unresolved challenge.",
+      "Explained why a visually compelling live digital twin still needs a clear place in the surgical workflow. User studies focused on which decisions it would change and what would justify using it.",
+      "Traced how reusable robot-data access and visualization supported a synchronized data logger, then combined with the digital twin to replay recorded procedures for case review, workspace analysis, and engineering investigation.",
+      "Closed with three habits for useful prototyping: test the highest-risk assumption early, observe actual user behavior, and preserve enabling technology when an application stops so it can support the next idea."
+    ],
+    "resources": [
+      {
+        "label": "Watch the Full Lecture",
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=BUsZT30O7Dc",
+        "external": true
+      }
+    ]
+  },
+  {
     "title": "Real-Time Soft-Tissue Simulation in Unity",
     "date": "2025–2026",
     "summary": "Converted a CUDA/C++ Material Point Method research solver into a configurable Unity platform for real-time deformable-material simulation, interaction, and GPU surface rendering.",

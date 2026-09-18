@@ -4,6 +4,7 @@ Each project has one self-contained folder. Keep images, videos, reports, and pr
 
 ## Published projects
 
+- `ihmc-lecture` — August 5, 2026 afternoon lecture; optimized title/speaker and digital-twin playback images, with the full IHMC recording embedded on the site
 - `cressim-unity` — redacted demos for the real-time soft-tissue simulation project
 - `unity-industry-summit` — conference photo and local source deck; the site embeds the public recording
 - `endoscopic-ar` — master's project media and paper

@@ -525,6 +525,16 @@ code {
   object-position: center top;
 }
 
+.project-media .media-fit-contain img,
+.project-media-gallery .media-fit-contain img {
+  object-fit: contain;
+  background: #080a0c;
+}
+
+.project-media-gallery .media-wide {
+  grid-column: 1 / -1;
+}
+
 .project-media-gallery figcaption {
   color: rgba(255, 255, 255, 0.72);
   padding: 0.65rem 0.75rem 0.75rem;
